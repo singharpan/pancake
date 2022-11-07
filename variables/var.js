@@ -1,0 +1,1 @@
+//For function scope the memory is allocated at once

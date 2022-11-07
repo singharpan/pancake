@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Event Bubbling
+    </title>
+    <style>
+        .first-container {
+            background-color: red;
+            padding: 20px
+        }
+
+        .second-container {
+            background-color: aqua;
+            padding: 15px
+        }
+
+        .third-container {
+            background-color: blueviolet;
+            padding: 10px
+        }
+    </style>
+    <script>
+        function firstContainer() {
+            alert(`first-container clicked ${JSON.stringify(e)}`)
+        }
+
+        function secondContainer() {
+            alert(`second-container clicked ${JSON.stringify(e)}` )
+        }
+        function thirdContainer() {
+            alert(`third-container clicked ${JSON.stringify(e)}`)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="first-container" onclick="firstContainer()">
+        first-container
+        <div class="second-container" onclick="secondContainer()">
+            second-container
+            <div class="third-container" onclick="thirdContainer()">
+                third-container
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

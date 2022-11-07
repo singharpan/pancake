@@ -1,0 +1,11 @@
+p:first-child {
+    color: brown;
+}
+
+p:last-child {
+    font-size: 0.75em;
+}
+
+p:nth-child(odd) {
+    font-weight:bold;
+}
