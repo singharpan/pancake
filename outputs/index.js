@@ -4,8 +4,8 @@ var output = (function() {
   delete x.foo;
   return x.foo;
 })();
-// console.log(x)
-// console.log(output)
+console.log(x)
+console.log(output)
 
 var trees = ["redwood", "bay", "cedar", "oak", "maple"];
 delete trees[3];
@@ -16,3 +16,13 @@ delete trees[3];
 	arrayNumb.sort();
 	console.log(arrayNumb);
 })();
+
+let arr=[1,2,3,4,5,6]
+console.log(arr.slice(2))
+arr.splice(2)
+const originalArray = [1, 2, 3, 4, 5];
+const newArrayOne = originalArray.reverse();
+console.log(originalArray,newArrayOne)
+
+
+
